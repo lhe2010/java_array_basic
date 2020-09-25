@@ -22,14 +22,14 @@ public class ArrayEx04_정답 {
 			arr[i] = ran.nextInt(100)+1;
 		}
 		for(int i = 0; i<5;i++) {
-			System.out.print(arr[i] + " ");
+			System.out.print(arr[i] + " "); // ***위에랑 중복. 굳이 두번 안해도됨
 		}
 		System.out.println();
 		
 		// 문제2) 전교생의 총점과 평균 출력
 		// 예   2) 총점(251) 평균(50.2)
 		int sum = 0;
-		double avg = 0;
+		double avg = 0;	// double avg = 0.0;
 		for (int i = 0; i<5; i++) {
 			sum += arr[i];
 		}

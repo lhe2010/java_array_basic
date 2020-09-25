@@ -29,7 +29,7 @@ public class ArrayEx05_정답 {
 		int score = scan.nextInt();
 		for(int i = 0; i<5; i++) {
 			if(arr[i] == score) {
-				idx = i;
+				idx = i; // ***break안하고 아예 찍는것도 반복문 안에서 해결해도됨(idx필요없이)
 				break;
 			}
 		}
@@ -46,12 +46,15 @@ public class ArrayEx05_정답 {
 		int hakbunIdx = 0;
 		for (int i = 0; i < hakbuns.length; i++) {
 			if(hakbuns[i] == hakbun) {
-				hakbunIdx = i;				
+				// ***break안하고 아예 찍는것도 반복문 안에서 해결해도됨(hakbunIdx필요없이)
+				hakbunIdx = i;	// sysout(scores[i]+"점");
 				break;			
 			}
 		}
-		System.out.println("성적 : "+ scores[hakbunIdx]+"점"); // 인덱스 범위 주의!
+		System.out.println("성적 : "+ scores[hakbunIdx]+"점"); 
+		// ***인덱스 주의! ArrayIndexOutOfBoundsException
+		// 이유: scores의 인덱스로 hakbun을 넣음 > scores[1004] 이렇게 되니까!
 		
+		scan.close();
 	}
-	
 }

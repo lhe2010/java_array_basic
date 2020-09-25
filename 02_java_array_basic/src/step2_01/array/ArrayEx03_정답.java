@@ -53,7 +53,7 @@ public class ArrayEx03_정답 {
 		cnt = 0;
 		for(int i = 0; i<5;i++) {
 			if(arr[i] % 2 == 0) {
-				cnt ++;
+				cnt++;
 			}
 		}
 		System.out.println(cnt);

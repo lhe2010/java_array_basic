@@ -36,7 +36,7 @@ public class ArrayEx06_정답 {
 			System.out.println("해당 학번은 존재하지 않습니다. ");
 		else
 			System.out.println("성적 : "+ scores[hakbunIdx]+"점");
-		
+		scan.close();
 	}
 	
 }
