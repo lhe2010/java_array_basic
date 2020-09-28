@@ -1,3 +1,5 @@
+// 0925금 연습. 
+// 0928월 연습. 연속이다. 3:08-3:14 중단
 package step2_01.array;
 
 import java.util.Scanner;
@@ -40,14 +42,33 @@ public class ArrayEx10_정답 {
 				checkLotto = lotto2;
 			case 3:
 				checkLotto = lotto3;
+			default:
+				break;
+					
 			}
 			
-			for(int i = 0; i<lotto1.length; i++) {
-				if(checkLotto[i] == 7)
+			cnt = 0;
+			int i = 0;
+			while(i < checkLotto.length-1 ) {
+				if(checkLotto[i] ==7 && checkLotto[i+1] ==7 && checkLotto[i+2] ==7)
 					cnt++;
+					//cnt++;
+				//else
+					//cnt = 0;
+				i++;
 			}
-			if(cnt >= 3)
+//			for(int i = 0; i<lotto1.length; i++) {
+//				if(checkLotto[i] == 7)
+//					cnt++;
+//					if(checkLotto[i+1] == 7)
+//						cnt++;
+//			}
+//			if(cnt >= 3)
+			if(cnt == 0)
+				System.out.println(sel+"번 로또는 꽝입니다!!");
+			else 
 				System.out.println(sel+"번 로또는 당첨입니다!!");
+				
 		}
 		
 		

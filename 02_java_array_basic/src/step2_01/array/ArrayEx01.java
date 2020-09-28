@@ -1,5 +1,8 @@
-// 0925 1교시 설명
+// 0925 1교시 설명, 0928 3교시 추가설명 
 package step2_01.array;
+
+import java.util.Arrays;
+
 /*
  * 배열(array)
  * [ 형식 ]
@@ -49,6 +52,9 @@ public class ArrayEx01 {
 		for (int i = 0; i < 5; i++) {
 			System.out.println(arr[i]);			
 		}
+		
+		// 위의 for를 쓰지않고 프린트해보는 단축키
+		System.out.println(Arrays.toString(arr));
 		
 		arr = null; // 배열 전체 삭제 
 		
