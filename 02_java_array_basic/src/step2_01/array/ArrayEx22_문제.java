@@ -33,9 +33,6 @@ public class ArrayEx22_문제 {
 			System.out.println("4종료\n");
 			System.out.print("입력 : ");
 			selectMenu = scan.nextInt();
-			
 		}
-		
 	}
-	
 }
