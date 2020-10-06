@@ -1,3 +1,4 @@
+// 20201005 수업후 
 package step2_01.array;
 
 import java.util.Arrays;
@@ -94,14 +95,15 @@ public class ArrayEx22_정답 {
 				System.out.print("arr["+idx+"]에 삽입하고싶은 값: ");
 				input = scan.nextInt();
 				
-//				for(int i = idx; i <= elementCnt; i++) {
-//					arr[i+1] = arr[i];
-//				}
-				for(;elementCnt > idx; idx--) {
-					arr[elementCnt] = arr[elementCnt-1];
+				// **********************************
+				// 인덱스i랑 elementCnt랑 idx랑 for문안에 배열 인덱스값이랑 엉켜서 값이 계속 오류났음!!!!!
+				// 하나씩 뒤로 밀어서 저장한다. 
+				for(int i = elementCnt;i > idx; i--) {
+					arr[i] = arr[i-1];
 				}
-				elementCnt++;
+				
 				arr[idx] = input;
+				elementCnt++;
 				
 				System.out.print("[결과] ");
 				for (int i = 0; i < elementCnt; i++) {
